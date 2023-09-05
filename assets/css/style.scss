@@ -375,4 +375,15 @@ img {
       }
     }
   }
+  .screens{
+    display: block;
+  }
+}
+
+
+.screens img {
+  margin: auto;
+  cursor: zoom-in;
+  max-width: 260px;
+  max-height: auto;
 }

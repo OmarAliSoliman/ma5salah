@@ -1,23 +1,30 @@
-$(document).ready(function () {
+$(document).ready(function(){
+
   "use strict";
 
-  if ($(".screen-app").length) {
-    var swiper = new Swiper(".swiper-container", {
-      effect: "coverflow",
-      grabCursor: true,
-      loop: true,
-      centeredSlides: true,
-      slidesPerView: "auto",
-      coverflowEffect: {
-        rotate: 0,
-        stretch: 20,
-        depth: 150,
-        modifier: 1.5,
-        slideShadows: true,
+  AOS.init();
+
+  $(".owl-carousel").owlCarousel({
+    autoplay: true,
+    loop: true,
+    margin: 0,
+    responsiveClass: true,
+    nav:false,
+    responsive: {
+      0: {
+        items: 1,
+        nav: true,
       },
-      pagination: {
-        el: ".swiper-pagination",
+      600: {
+        items: 2,
+        nav: false,
       },
-    });
-  }
-});
+      1000: {
+        items: 4,
+        nav: true,
+        loop: false,
+      },
+    },
+  });
+
+})
