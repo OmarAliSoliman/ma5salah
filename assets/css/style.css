@@ -127,6 +127,9 @@ img {
   line-height: 25px;
   font-size: 1rem;
 }
+.about-content ul li p {
+  margin-bottom: 10px !important;
+}
 
 .features {
   padding: 41px 0;
